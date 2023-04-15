@@ -10,7 +10,7 @@ import styles from './styles.module.scss'
 export default function AccordionMy() {
   return (
     <div className={styles.accordion}>
-      <h2 className={styles.accordion__title}>Часто задаваемые вопросы</h2>
+      <h2 className={styles.accordion__title}>Найпоширеніші запитання</h2>
       {accordion.map((item) => (
         // eslint-disable-next-line react/jsx-key
         <Accordion className={styles.accordion__item}>
