@@ -10,7 +10,7 @@ export default function Form() {
 
   const validateName = (name) => {
     if (name.length < 2 || name.length > 20) {
-      setNameError("Имя должно быть длиннее 2 букв и короче 20.");
+      setNameError("Ім'я повине бути довше 2 літер і коротше 20.");
     } else {
       setNameError("");
     }
@@ -22,7 +22,7 @@ export default function Form() {
     if (phoneRegex.test(phone)) {
       setPhoneError("");
     } else {
-      setPhoneError("Номер телефона должен начинаться с +380 и иметь 12 цифр");
+      setPhoneError("Номер телефону повинен починатися з +380 і мати 12 цифр");
     }
   };
 
@@ -45,14 +45,14 @@ export default function Form() {
   }
   return (
     <div className={styles.form}>
-      <h2 className={styles.form__title}>Оформить заказ</h2>
+      <h2 className={styles.form__title}>Оформити замовлення</h2>
       <p className={styles.form__subtitle}>
-        Обсудите все детали заказа по телефону или сами укажите все подробности
+        Обговоріть усі деталі замовлення телефоном чи самі вкажіть усі подробиці
         онлайн
       </p>
       <form onSubmit={handleSubmit}>
         <label className={styles.input_wrapper}>
-          <p className={styles.form__input_name}>Имя </p>
+          <p className={styles.form__input_name}>Ім'я </p>
           <input
             className={styles.form__input}
             type="text"
@@ -69,7 +69,7 @@ export default function Form() {
           {nameError === "" && <span className={styles.valid_indicator} />}
         </label>
         <label className={styles.input_wrapper}>
-          <p className={styles.form__input_name}> Номер телефона</p>
+          <p className={styles.form__input_name}> Номер телефону</p>
           <input
             className={styles.form__input}
             type="tel"
@@ -90,14 +90,14 @@ export default function Form() {
             <div className={styles.back__form_checkbox_wrapp}>
               <label className={styles.back__form_checkbox}>
                 <input type="checkbox" name="radio" />
-                <p>Тест-день! Получить скидку -30%?</p>
+                <p>Тестовий день! Отримуйте знижку -30%?</p>
                 <span className={styles.checkmark}> </span>
               </label>
             </div>
             <div className={styles.back__form_checkbox_wrapp}>
               <label className={styles.back__form_checkbox}>
                 <input type="checkbox" name="radio" />
-                <p>Согласен с условиями сотрудничества</p>
+                <p>Згоден з умовами співпраці</p>
                 <span className={styles.checkmark}></span>
               </label>
             </div>
@@ -105,9 +105,9 @@ export default function Form() {
         </div>
 
         <div className={styles.form__buttons}>
-          <button className={styles.form__btn_phone} type="submit">Заказ по телефону</button>
-          <p className={styles.form__btn_or}>ИЛИ</p>
-          <button className={styles.form__btn_online} type="submit">Онлайн заказ</button>
+          <button className={styles.form__btn_phone} type="submit">Замовлення телефоном</button>
+          <p className={styles.form__btn_or}>ЧИ</p>
+          <button className={styles.form__btn_online} type="submit">Онлайн замовлення</button>
         </div>
       </form>
     </div>
