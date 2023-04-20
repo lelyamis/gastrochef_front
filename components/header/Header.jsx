@@ -35,7 +35,7 @@ export default function Header() {
           }`}
           onClick={() => {handleLinkClick("program"), closeMenu()}}
         >
-          Программа питания
+          Програма харчування
         </Link>
         <Link 
         
@@ -45,7 +45,7 @@ export default function Header() {
           }`}
           onClick={() => {handleLinkClick("business"), closeMenu()}}
         >
-          Бизнес ланчи
+          Бізнес ланчі
         </Link>
         <Link 
         
@@ -65,7 +65,7 @@ export default function Header() {
           }`}
           onClick={() => {handleLinkClick("about"),closeMenu()}}
         >
-          О нас
+          Про нас
         </Link>
         <Link 
         
