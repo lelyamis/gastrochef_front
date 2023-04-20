@@ -18,7 +18,7 @@ export default function Advantages() {
             height={63}
           />
           <p className={styles.advantages__item_text}>
-            Бережемо природу. Еко-тара та прилади.
+            Бережемо природу. Еко-тара і прилади.
           </p>
         </div>
         <div className={styles.advantages__item}>
@@ -40,7 +40,7 @@ export default function Advantages() {
             height={63}
           />
           <p className={styles.advantages__item_text}>
-            Безкоштовно замінюємо страви та інгредієнти.
+            Безкоштовно замінюємо страви й інгредієнти.
           </p>
         </div>
         <div className={styles.advantages__item}>
@@ -62,7 +62,7 @@ export default function Advantages() {
             height={63}
           />
           <p className={styles.advantages__item_text}>
-            Щоденна зручна та безкоштовна доставка з 6:00 до 10:00
+            Щоденна зручна і безкоштовна доставка з 6:00 до 10:00
           </p>
         </div>
         <div className={styles.advantages__item}>
