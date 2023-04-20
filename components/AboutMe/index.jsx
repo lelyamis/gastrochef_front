@@ -10,7 +10,7 @@ export default function AboutMe() {
             <div className={styles.container}>
                 <div className={styles.about__info}>
                     <h2 className={styles.about__info_title}>
-                        Привіт! Мене звати <span>Кобилінський Кирило</span>, та я
+                        Привіт! Мене звати <span>Кобилінський Кирило</span>, і я
                         є <span>засновником GastroChef.</span>
                     </h2>
                     <p className={styles.about__info_text}>
@@ -19,11 +19,11 @@ export default function AboutMe() {
                     </p>
                     <p className={styles.about__info_text}>
                         У мене вища освіта національного університету фізичного
-                        виховання та спорту України (НФВСУ), а також у минулому я
+                        виховання і спорту України (НФВСУ), а також у минулому я
                         професійний фітнес тренер!
                     </p>
                     <h3 className={styles.about__info_subtitle}>
-                        Та я хочу Вам розповісти більше про GastroChef.
+                        І я хочу Вам розповісти більше про GastroChef.
                     </h3>
                 </div>
 
