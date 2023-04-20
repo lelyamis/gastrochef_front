@@ -25,7 +25,7 @@ export default function ModalOnline({ active, setActive, total }) {
     },
   ];
 
-  const [timeDelivery, setTimeDelivery] = useState("Время доставки");
+  const [timeDelivery, setTimeDelivery] = useState("Час доставки");
 
   const getValueTime = () => {
     return timeDelivery ? time.find((c) => c.value === timeDelivery) : "";
@@ -41,15 +41,15 @@ export default function ModalOnline({ active, setActive, total }) {
       label: "visa",
     },
     {
-      value: "Наложный платеж",
-      label: "Наложный платеж",
+      value: "Податковий платіж",
+      label: "Податковий платіж",
     },
     {
       value: "Privat24",
       label: "Privat24",
     },
   ];
-  const [payDelivery, setPayDelivery] = useState("Время доставки");
+  const [payDelivery, setPayDelivery] = useState("Час доставки");
 
   const getValuePay = () => {
     return payDelivery ? pay.find((c) => c.value === payDelivery) : "";
@@ -65,30 +65,30 @@ export default function ModalOnline({ active, setActive, total }) {
       label: "Google реклама",
     },
     {
-      value: "От знакомых",
-      label: "От знакомых",
+      value: "Від знайомих",
+      label: "Від знайомих",
     },
   ];
-  const [whereKnow, setWhereKnow] = useState("Откуда узнали о нас");
+  const [whereKnow, setWhereKnow] = useState("Звідки дізналися про нас");
   const getValueKnow = () => {
     return whereKnow ? know.find((c) => c.value === whereKnow) : "";
   };
 
   const connect = [
     {
-      value: "Звонок для подтверждения заказа",
-      label: "Звонок для подтверждения заказа",
+      value: "Дзвінок для підтвердження замовлення",
+      label: "Дзвінок для підтвердження замовлення",
     },
     {
-      value: "СМС для подтверждения заказа",
-      label: "СМС для подтверждения заказа",
+      value: "СМС для підтвердження замовлення",
+      label: "СМС для підтвердження замовлення",
     },
     {
-      value: "Не подтверждать заказ",
-      label: "Не подтверждать заказ",
+      value: "Не підтверждувати замовлення",
+      label: "Не підтверждувати замовлення",
     },
   ];
-  const [connectUs, setConnectUs] = useState("Как с Вами связаться?");
+  const [connectUs, setConnectUs] = useState("Як з Вами зв'язатися?");
   const getValueConnect = () => {
     return connectUs ? connect.find((c) => c.value === connectUs) : "";
   };
@@ -142,7 +142,7 @@ export default function ModalOnline({ active, setActive, total }) {
             className={styles.modal__mistake}
             onClick={() => setActive(false)}
           >
-            Заполните все поля правильно
+            Заповніть усі поля правильно
           </h2>
           <Image
             onClick={() => setActive(false)}
@@ -157,14 +157,14 @@ export default function ModalOnline({ active, setActive, total }) {
             <input
               className={styles.modal__input}
               required
-              placeholder="имя"
+              placeholder="Ім'я"
               name="name"
               type="text"
             />
             <input
               className={styles.modal__input}
               required
-              placeholder="Введите номер телефона"
+              placeholder="Введіть номер телефону"
               name="tel"
               type="text"
             />
@@ -172,21 +172,21 @@ export default function ModalOnline({ active, setActive, total }) {
               <input
                 className={styles.modal__input}
                 required
-                placeholder="Улица"
+                placeholder="Вулиця"
                 name="name"
                 type="text"
               />
               <input
                 className={styles.modal__input}
                 required
-                placeholder="Дом:"
+                placeholder="Дім:"
                 name="name"
                 type="text"
               />
               <input
                 className={styles.modal__input}
                 required
-                placeholder="Этаж:"
+                placeholder="Поверх:"
                 name="name"
                 type="text"
               />
@@ -200,7 +200,7 @@ export default function ModalOnline({ active, setActive, total }) {
               <input
                 className={styles.modal__input}
                 required
-                placeholder="Парадное:"
+                placeholder="Парадна:"
                 name="name"
                 type="text"
               />
@@ -219,35 +219,35 @@ export default function ModalOnline({ active, setActive, total }) {
               // onChange={onChange}
               value={getValueTime()}
               options={time}
-              placeholder="Время доставки"
+              placeholder="Час доставки"
               styles={customStyles}
             />
             <Select
               classNamePrefix="modal__select"
               value={getValuePay()}
               options={pay}
-              placeholder="Способ оплаты"
+              placeholder="Спосіб оплати"
               styles={customStyles}
             />
             <Select
               classNamePrefix="modal__select"
               value={getValueKnow()}
               options={know}
-              placeholder="Откуда узнали о нас"
+              placeholder="Як дізналися про нас"
               styles={customStyles}
             />
             <Select
               classNamePrefix="modal__select"
               value={getValueConnect()}
               options={connect}
-              placeholder="Как с Вами связаться?"
+              placeholder="Як з Вами св'язатися?"
               styles={customStyles}
             />
           </div>
         </div>
         <div className={styles.modal__order}>
           <div className={styles.modal__btn} onClick={() => setActive(false)}>
-            Заказать
+            Замовити
           </div>
           <div className={styles.modal__total}>
             {count} шт / {price} грн
