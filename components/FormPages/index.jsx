@@ -10,7 +10,7 @@ export default function Form() {
 
   const validateName = (name) => {
     if (name.length < 2 || name.length > 20) {
-      setNameError("Ім'я повине бути довше 2 літер і коротше 20.");
+      setNameError("Ім'я повине бути довше 2-х літер і коротше 20-ти.");
     } else {
       setNameError("");
     }
@@ -47,7 +47,7 @@ export default function Form() {
     <div className={styles.form}>
       <h2 className={styles.form__title}>Оформити замовлення</h2>
       <p className={styles.form__subtitle}>
-        Обговоріть усі деталі замовлення телефоном чи самі вкажіть усі подробиці
+        Обговоріть усі деталі замовлення телефоном або самі вкажіть усі подробиці
         онлайн
       </p>
       <form onSubmit={handleSubmit}>
@@ -106,7 +106,7 @@ export default function Form() {
 
         <div className={styles.form__buttons}>
           <button className={styles.form__btn_phone} type="submit">Замовлення телефоном</button>
-          <p className={styles.form__btn_or}>ЧИ</p>
+          <p className={styles.form__btn_or}>АБО</p>
           <button className={styles.form__btn_online} type="submit">Онлайн замовлення</button>
         </div>
       </form>
