@@ -32,7 +32,7 @@ export default function ModalNumber({active, setActive}){
                         type="text"
                     />
                 </div>
-                <div className={styles.number__button} onClick={() => setActive(false)}>Заказать</div>
+                <div className={styles.number__button} onClick={() => setActive(false)}>Замовити</div>
 
 
                 </div>
